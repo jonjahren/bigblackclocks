@@ -35,7 +35,7 @@ $emailaddress = mysqli_real_escape_string($connection, $_POST['email']);
 /* Dette lager en hash av passordet sånn at vi ikke lagrer passord i 
    klartekst. Sikkeretsforanstaltninger. */
 
-$passwordhash = md5($_POST['psw']);
+$passwordhash = hash('sha512', $_POST['psw']);
 
 /* Dette er kommandoen for å sette inn informasjon fra en nettside i databasen vår. INSERT INTO og VALUES er rett og slett SQL-kommandoer. */
 
