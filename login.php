@@ -25,7 +25,7 @@ elseif(!empty($_POST['username']) && !empty($_POST['password']))
         $email = $row['EmailAddress'];
          
         $_SESSION['Username'] = $username;
-        $_SESSION['EmailAddress'] = $email;
+        /* $_SESSION['EmailAddress'] = $email; */
         $_SESSION['LoggedIn'] = 1;
          
         echo "<h1>Success</h1>";
