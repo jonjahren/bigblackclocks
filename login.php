@@ -17,7 +17,7 @@ elseif(!empty($_POST['username']) && !empty($_POST['password']))
     
     $password = md5(mysql_real_escape_string($_POST['password']));
      
-    $checklogin = mysql_query("SELECT * FROM Personer WHERE username = '".$username."' AND password = '".$password."'");
+    $checklogin = mysql_query("SELECT * FROM Personer WHERE FirstName = '".$username."' AND password = '".$password."'");
      
     if(mysql_num_rows($checklogin) == 1)
     {
