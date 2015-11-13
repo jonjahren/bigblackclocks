@@ -5,12 +5,12 @@
     
 <?php 
 
-if(!empty($_SESSION['LoggedIn'])) && !empty($_SESSION['Username'])
+if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username']))
 {
     echo "Velkommen!";
 }
 
-elseif(!empty($_POST['username'])) && !empty($_POST['password'])
+elseif(!empty($_POST['username']) && !empty($_POST['password']))
 {
     $username = mysql_real_escape_string($_POST['username']);
     
