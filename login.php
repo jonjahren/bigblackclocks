@@ -4,7 +4,7 @@
     
 <?php 
 
-include base.php;
+include 'base.php';
 
 if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username']))
 {
@@ -30,7 +30,7 @@ elseif(!empty($_POST['username']) && !empty($_POST['password']))
          
         echo "<h1>Success</h1>";
         echo "<p>We are now redirecting you to the member area.</p>";
-        echo "<meta http-equiv='refresh' content='=2;index.php' />";
+        echo "<meta http-equiv='refresh' content='=2;login.php' />";
     }
     else
     {
@@ -44,7 +44,7 @@ else
      
    <h1>Member Login</h1>
      
-   <p>Thanks for visiting! Please either login below, or <a href="register.php">click here to register</a>.</p>
+   <p>Thanks for visiting! Please either login below, or <a href="createuser.html">click here to register</a>.</p>
      
     <form method="post" action="login.php" name="loginform" id="loginform">
     <fieldset>
