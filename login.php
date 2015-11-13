@@ -1,9 +1,10 @@
 <html>
 
 <body>
-<?php include base.php ?>
     
 <?php 
+
+include base.php;
 
 if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username']))
 {
@@ -34,7 +35,7 @@ elseif(!empty($_POST['username']) && !empty($_POST['password']))
     else
     {
         echo "<h1>Error</h1>";
-        echo "<p>Sorry, your account could not be found. Please <a href=\"index.php\">click here to try again</a>.</p>";
+        echo "<p>Sorry, your account could not be found. Please <a href=\"login.php\">click here to try again</a>.</p>";
     }
 }
 else
