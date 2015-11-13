@@ -45,7 +45,7 @@ else
      
    <p>Thanks for visiting! Please either login below, or <a href="register.php">click here to register</a>.</p>
      
-    <form method="post" action="index.php" name="loginform" id="loginform">
+    <form method="post" action="login.php" name="loginform" id="loginform">
     <fieldset>
         <label for="username">Username:</label><input type="text" name="username" id="username" /><br />
         <label for="password">Password:</label><input type="password" name="password" id="password" /><br />
